@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 黑体;
+}
+div.big-block{
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+	background: url("cute dog.jpg");
+	-moz-background-size: 10% 50%;
+	background-size: 10% 50%;
+}
+div.middle-block{
+	width: 300px;
+	height: 700px;
+	background: white;
+	margin:0 auto;
+	padding: 20px;
+	outline: 5px dotted white;
+	box-shadow: 15px 15px 10px grey;
+	outline-offset: 25px;
+	animation: bling-bling 5s;
+	-webkit-animation: bling-bling 5s;
+	-moz-animation: bling-bling 5s;
+	-o-animation: bling-bling 5s;
+	transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+}
+@keyframes bling-bling{
+	0% {background: red;}
+	25% {background: blue;}
+	50% {background: yellow;}
+	100%{background: green;}
+}
+@-webkit-keyframes bling-bling{
+	0% {background: red;}
+	25% {background: blue;}
+	50% {background: yellow;}
+	100%{background: green;}
+}
+@-moz-keyframes bling-bling{
+	0% {background: red;}
+	25% {background: blue;}
+	50% {background: yellow;}
+	100%{background: green;}
+}
+@-o-keyframes bling-bling{
+	0% {background: red;}
+	25% {background: blue;}
+	50% {background: yellow;}
+	100%{background: green;}
+}
+/*big-block ends*/
+table{
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+table,th,td{
+	border: 1px solid white;
+}
+th{
+	color: white;
+	background: black;
+}
+tr:nth-child(odd){
+	background: white;
+}
+tr:nth-child(even){
+	background: grey;
+}
+tr:nth-child(n){
+	color: red;
+}
+tr:nth-child(n+4){
+	color: black;
+}
+/*table ends*/
+input{
+	width: 100px;
+	height: 25px;
+	outline: none;
+	margin: 30px 0;
+	transition: width 3s;
+    -moz-transition: width 3s;
+	-webkit-transition: width 3s;
+	-o-transition: width 3s;
+}
+input:focus{
+	width: 100%;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+/*input ends*/
+.banner{
+    position: relative;
+    width: 300px;
+    height: 190px;
+    overflow: hidden;
+}
+.banner-controller{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.banner-controller a{
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    background: grey;
+    opacity: 0.8;
+    text-align: center;
+    color: yellow;
+}
+.three-images{
+	position: absolute;
+	width: 1000px;
+	transition: 1s left;
+	-moz-transition: 1s left;
+	-webkit-transition: 1s left;
+	-o-transition: 1s left;
+}
+.three-images img{
+	float: left;
+}
+#img1:target~.three-images{
+    left: 0
+}
+#img2:target~.three-images{
+    left: -100%;
+}
+#img3:target~.three-images{
+    left: -200%;
+}
+/*banner ends*/

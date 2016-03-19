@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		list-style: none;
+	}
+	img{
+		width: 80px;
+		height: 80px;
+	}
+	.all{
+		min-width: 600px;
+		margin: 20px;
+		padding: 20px;
+		background-color: #eee;
+	}
+	.all:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	/*all ends*/
+	.all,.left-side,.right-side,.middle{
+		border: 1px solid #999;
+	}
+	.left-side{
+		width: 160px;
+		padding: 20px;
+		background-color: white;
+		float: left;
+	}
+	.left-side-p{
+		line-height: 1.5em;
+		float: right;
+	}
+	/*left-side ends*/
+	.right-side{
+		width: 80px;
+		padding: 20px;
+		background-color: white;
+		float: right;
+	}
+	.img-logo{
+		margin-bottom: 20px;
+	}
+	/*right-side ends*/
+	.middle{
+		padding: 20px;
+		margin-left: 222px;
+		margin-right: 142px;
+		background-color: white;
+	}
+	h2{
+		text-align: center;
+	}
+	.middle p{
+		line-height: 1.6em;
+	}
+	/*middle ends*/
+	</style>
+</head>
+<body>
+<div class="all">
+	<div class="left-side">
+		<img  class="img-team" src="team.png">
+		<div  class="left-side-p">
+			<p>Happy</p>
+			<p>coding</p>
+		</div>
+	</div>
+	<div class="right-side">
+		<ul>
+	    	<li><img class="img-logo" src="ye.jpg"></li>
+	    	<li><img class="img-logo" src="qiu.jpg"></li>
+	    	<li><img class="img-logo" src="li.jpg"></li>
+	    	<li><img class="img-logo" src="wan.jpg"></li>
+	    	<li><img src="lin.jpg"></li>
+		</ul>
+	</div>
+	<div class="middle">
+		<h2>团队介绍</h2>
+		<p><strong>团队名字由来</strong></p>
+		<p>&nbsp&nbspHappy coding，学习是痛苦的，枯燥的，需要持续不断的努力。只有保持学习前端知识的热情，有明确的学习目标和学习计划，和团队成员一起协作，互相帮助，才有动力开开心心的coding。</p>
+		<p><strong>团队成员介绍</strong></p>
+		<p>&nbsp&nbsp<em>luCooKie</em>，女，现在一家公司做行政助理，前端开发初学者，会简单的html/css，了解但不会写JS/jQuery。</p>
+		<p>&nbsp&nbsp<em>太阳</em>，男，现职位是web前端开发，有8个月的前端经验，熟练掌握html/css/jQuery，正在深入学习JS。</p>
+		<p>&nbsp&nbsp<em>Andy</em>，男，自由职业，学过基础的MEAN stack技术，希望能够系统加强相关能力，并结识到气味相投的朋友。</p>
+		<p>&nbsp&nbsp<em>Wan</em>，男，现职位是前端开发，前端爱好者，熟悉JS，有少量开发经验。</p>
+		<p>&nbsp&nbsp<em>Paradise</em>，男，现职位是产品助理，对前端感兴趣，会前端基础，正在学jQuery。</p>
+	</div>
+</div>
+</body>
+</html>

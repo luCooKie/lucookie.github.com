@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>First-part task4</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.rectangle{
+		width: 400px;
+		height: 200px;
+		background: #ccc;
+		margin: auto; 
+		overflow: hidden; 
+		position: absolute;  
+		top: 0; 
+		left: 0; 
+		bottom: 0; 
+		right: 0; 
+	}
+	.yellow-top,.yellow-bottom{
+		width: 100px;
+		height: 100px;
+		background: #fc0;
+	    -moz-border-radius: 50px;
+	    -webkit-border-radius: 50px;
+	    border-radius: 50px;
+	    position: relative;
+	}
+	.yellow-top{
+		top: -50px;
+		left: -50px;
+	} 
+	.yellow-bottom{
+		bottom: -50px;
+		left: 350px;
+	}
+	</style>
+</head>
+<body>
+	<div class="rectangle">
+		<div class="yellow-top"></div>
+		<div class="yellow-bottom"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+/*all ends*/
+.header{
+    height: 57px;
+    position: relative;
+}
+.header span{
+    font-size: 21px;
+    font-family: 黑体;
+    color: #393a3a;
+    line-height: 57px;
+    margin-left: 102px;
+}
+.header>img{
+    position: absolute;
+    top: 13px;
+    left: 60px;
+}
+.header ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header ul{
+    margin-top: 15px;
+    margin-right: 30px;
+    float: right;
+    position: relative;
+}
+.header li{
+    padding: 0 23px 17px 23px;
+    float: left;
+}
+.header li a{
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+.header li.banner-1 a{
+    color: #787b83;
+}
+.header li.banner-2 a{
+    color: #e74f4d;
+}
+.header li.banner-1:hover{
+    color: #e74f4d;
+    border-bottom: 5px solid #e74f4d;
+}
+.header li img{
+    position: absolute;
+    top: 3px;
+    right: 53px;
+}
+/*header ends*/
+.body-1{
+    height: 689px;
+    background-image: url(big-image.png);
+    font-family: 微软雅黑;
+    color: white;
+    position: relative;
+}
+.body-1>img{
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
+}
+.body-1 div p{
+    position: absolute;
+    z-index: 2;
+}
+.body-1 div p:nth-child(1){
+    font-size: 60px;
+    top: 171px;
+    left: 115px;
+}
+.body-1 div p:nth-child(2){
+    font-size: 21px;
+    line-height: 30px;
+    top: 305px;
+    left: 125px;
+}
+.body-1 button{
+    position: absolute;
+    z-index: 3;
+    width: 331px;
+    height: 65px;
+    font-size: 30px;
+    color: white;
+    font-family: 微软雅黑;
+    background: #e7504d;
+    border: 0;
+    top: 425px;
+    left: 125px;
+}
+/*body-1 ends*/
+.body-4{
+    background-image: url(map.png);
+    height: 341px;
+    font-family: 微软雅黑;
+}
+.body-4>img{
+    opacity: 0.2;
+    position: absolute;
+    z-index:1
+}
+.body-4>div{
+    width: 1280px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+.body4-container{
+    padding: 35px 127px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.body4-container>div{
+    width: 236px;
+    height: 36px;
+    background: white;
+}
+.body4-container>div.search-button{
+    background: #be4e48;
+    font-size: 14px;
+    line-height: 36px;
+    color: white;
+}
+.body-4 p{
+    color: white;
+}
+.body-4 p:first-child{
+    font-size: 21px;
+    margin-top: 53px;
+    margin-bottom: -7px;
+}
+.body-4>div>img+p{
+    font-size: 12px;
+    line-height: 47px;
+    text-align: center;
+}
+
+.body4-container .select{
+    color: #867e7a;
+    background-image: url(little-red-button.png);
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: left;
+    line-height: 36px;
+    text-indent: 10px;
+}
+.body4-container .select li{
+    line-height: 26px;
+    text-indent: 30px;
+}
+.option{
+   margin-top: 1px;
+   background: #ddd;
+   display: none;
+}
+ul.option > li:hover{
+  background: #be4e48;
+  color: white;
+  background-image: url(gou.png);
+  background-repeat: no-repeat;
+  background-position: 4% 50%;
+}
+.select:focus{
+    outline: 1px solid #be4e48;
+}
+.body4-container .select:focus>.option {
+    display: block;
+    outline: 1px solid #be4e48;
+}
+/*body-4 ends*/
+.body-7{
+    width: 1280px;
+    height: 521px;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+}
+.sectionOne,.sectionTwo{
+    -moz-box-flex:1;
+    -webkit-box-flex:1;
+    box-flex:1;
+}
+.sectionOne,.sectionTwo,.sectionThree{
+    font-size: 21px;
+    font-family: 黑体;
+    text-align: center;
+    line-height: 30px;
+}
+.sectionOne{
+    background: #e74f4d;
+    color: white;
+}
+.sectionTwo{
+    background: white;
+    color: #e74f4d;
+}
+.sectionThree{
+    width: 430px;
+    background-image: url(woman.png);
+}
+.body-7 div div{
+    width: 170px;
+    height: 44px;
+    line-height: 44px;
+    margin: 15px auto;
+}
+.sectionOne div{
+    border: 1px solid white;
+}
+.sectionTwo div{
+    border: 1px solid #e74f4d;
+}
+.body-7 div p{
+    margin-top: 175px;
+}
+/*body-7 ends*/
+.body-8{
+    height: 630px;
+    background: white;
+    text-align: center;
+}
+.body-8 p:first-child{
+    font-size: 21px;
+    font-family: 黑体;
+    color: #323333;
+    margin-bottom: -5px;
+    margin-top: 120px;
+}
+.body-8 img+p{
+    font-size: 12px;
+    height: 18px;
+    font-family: 微软雅黑;
+    color: #aaaaaa;
+    margin-top: 10px;
+}
+.body-8>div{
+    width: 1000px;
+    height: 285px;
+    margin: 0 auto;
+    margin-top: 105px;
+}
+.body-8 div div{
+    float: left;
+}
+.body-8>div>div:first-child{
+    width: 290px;
+    height: 285px;
+    text-align: left;
+    color: #231815;
+}
+.body-8>div>div:last-child{
+    width: 640px;
+    height: 285px;
+    margin-left: 70px;
+}
+.body-8 div div span{
+    font-size: 14px;
+    font-family: 黑体;
+}
+.body-8 div div p,.body-8 li{
+    font-size: 12px;
+    font-family: 宋体;
+    opacity: 0.6;
+}
+.body8-1ul{
+    margin-bottom: 35px;
+}
+.body-8 div div p{
+    line-height: 21px;
+}
+.body-8 li{
+    float: right;
+}
+.body-8 ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.first-p{
+    margin-top: 25px;
+}
+.last-p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.body8-3ul{
+    margin-top: 20px;
+}
+.body-8 .right-block div{
+    background: #ededee;
+    font-family: 宋体;
+    font-size: 12px;
+    text-align: left;
+    position: relative;
+}
+.right-block1,.right-block2,.right-block3,.right-block4{
+    width: 311px;
+    height: 41px;
+}
+.right-block1,.right-block2{
+    margin-bottom: 14px;
+}
+.right-block1,.right-block3{
+    margin-right: 18px;
+}
+.right-block5{
+    width: 639px;
+    height: 121px;
+    margin: 14px 0;
+}
+.body-8 div.right-block6{
+    width: 639px;
+    height: 41px;
+    font-family: 黑体;
+    font-size: 14px;
+    line-height: 41px;
+    text-align: center;
+}
+.right-block div label{
+    padding-left: 16px;
+    line-height: 41px;
+    opacity: 0.8;
+    position: absolute;
+    top: 2px;
+}
+.right-block .right-block5 label{
+    position: absolute;
+    top: -2px;
+}
+.right-block .right-block1 input,.right-block .right-block2 input{
+    border: none;
+    width: 257px;
+    height: 41px;
+    padding-left: 54px;
+    background: #ededee;
+}
+.right-block .right-block3 input,.right-block .right-block4 input{
+    border: none;
+    width: 233px;
+    height: 41px;
+    padding-left: 78px;
+    background: #ededee;
+}
+textarea{
+    width: 619px;
+    height: 101px;
+    text-indent: 155px;
+    border: none;
+    background: #ededee;
+    padding: 10px;
+}
+/*body-8 ends*/

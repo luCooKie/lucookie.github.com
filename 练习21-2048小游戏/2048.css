@@ -6,14 +6,9 @@ header {
     font-family: Arial;
 }
 
-header h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
 header #new-game-button {
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     width: 100px;
     padding: 10px;
     background: #8f7a66;
@@ -35,7 +30,7 @@ header p {
     width: 460px;
     height: 460px;
     padding: 20px;
-    margin: 30px auto;
+    margin: 20px auto;
     background: #bbada0;
     border-radius: 10px;
     position: relative;

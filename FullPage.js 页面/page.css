@@ -1,0 +1,292 @@
+body {
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+}
+
+/*#side-bar*/
+#side-bar {
+    width: 300px;
+    height: 100%;
+    background: #3a3a3a;
+    position: fixed;
+    z-index: 1001;
+    color: #fff;
+    font-size: 25px;
+    border-right: 3px solid #fff;
+    display: none;
+}
+
+#side-bar p {
+    font-size: 45px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+#side-bar p:hover {
+    color: #38c1d4;
+}
+
+#side-bar ul {
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+#side-bar li {
+    height: 45px;
+    cursor: pointer;
+}
+
+#side-bar p:hover, #side-bar li:hover {
+    color: #38c1d4;
+}
+
+/*header*/
+#header {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#header > div {
+    position: absolute;
+    height: 32px;
+    left: 40px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#header span {
+    font-size: 18px;
+    text-indent: 80px;
+    position: relative;
+    top: -5px;
+}
+
+#header .logo {
+    display: block;
+    margin: 9px auto;
+}
+
+#header button {
+    position: absolute;
+    width: 165px;
+    height: 45px;
+    border: 0;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bolder;
+    background: #2b91ff;
+    top: 12px;
+    right: 50px;
+}
+
+#header button:hover {
+    background: #3d99ff;
+}
+
+#header ul {
+    position: absolute;
+    top: 20px;
+    right: 220px;
+}
+
+#header li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#header li a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+#header .facebook a {
+    background: url(http://torchbrowser.com/styles/default/attire/common/social/facebook.png) 0 -66px;
+}
+
+#header .twitter a {
+    background: url(http://torchbrowser.com/styles/default/attire/common/social/twitter.png) 0 -66px;
+}
+
+#header .google a {
+    background: url(http://torchbrowser.com/styles/default/attire/common/social/google.png) 0 -66px;
+}
+
+#header .facebook a:hover {
+    background: url(http://torchbrowser.com/styles/default/attire/common/social/facebook.png) 0 -33px;
+}
+
+#header .twitter a:hover {
+    background: url(http://torchbrowser.com/styles/default/attire/common/social/twitter.png) 0 -33px;
+}
+
+#header .google a:hover {
+    background: url(http://torchbrowser.com/styles/default/attire/common/social/google.png) 0 -33px;
+}
+
+/*first-page*/
+.first-page {
+    background: url(http://torchbrowser.com/styles/default/attire/home/homepage_pic.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.first-page img {
+    width: 540px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.first-page p {
+    font-size: 25px;
+    line-height: 45px;
+}
+
+.first-page button {
+    width: 260px;
+    height: 65px;
+    background: #2189ff;
+    color: #fff;
+    font-size: 30px;
+    border: 0;
+    margin-top: 40px;
+}
+
+.first-page button:hover {
+    background: #4fa1ff;
+}
+
+/*second-page*/
+.second-page {
+    text-align: center;
+}
+
+.second-page > p {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.second-page .big-block {
+    margin: 80px auto;
+    width: 988px;
+    height: 642px;
+}
+
+.second-page .big-block > div {
+    height: 300px;
+}
+
+.second-page .big-block > div:first-child {
+    margin-bottom: 50px;
+}
+
+.second-page .big-block > div > div {
+    width: 296px;
+    height: 296px;
+    margin-right: 50px;
+    float: left;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.second-page .big-block > div > div:last-child {
+    margin-right: 0;
+}
+
+.second-page .media-grabber {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/mg.jpg);
+}
+
+.second-page .torch-torrent {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/torrent.jpg);
+}
+
+.second-page .torch-player {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/player.jpg);
+}
+
+.second-page .torch-music {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/music.jpg);
+}
+
+.second-page .torch-games {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/games.jpg);
+}
+
+.second-page .torch-facelift {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/facelift.jpg);
+}
+
+.second-page .media-grabber:hover {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/mg.jpg) right;
+}
+
+.second-page .torch-torrent:hover {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/torrent.jpg) right;
+}
+
+.second-page .torch-player:hover {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/player.jpg) right;
+}
+
+.second-page .torch-music:hover {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/music.jpg) right;
+}
+
+.second-page .torch-games:hover {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/games.jpg) right;
+}
+
+.second-page .torch-facelift:hover {
+    background: url(http://torchbrowser.com/styles/default/attire/home/pads/facelift.jpg) right;
+}
+
+/*third*/
+.third-page {
+    background: url(img/bg.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.third-page > p {
+    font-size: 45px;
+    margin-top: 150px;
+}
+
+.third-page > p > span {
+    font-size: 69px;
+    margin-top: 25px;
+    letter-spacing: 5px;
+}
+
+.third-page .bottom-information {
+    padding-top: 25px;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    opacity: 0.7;
+}
+
+.third-page .bottom-information p:last-child, .third-page .bottom-information a {
+    line-height: 35px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.third-page .bottom-information a {
+    padding: 0 2px;
+}
+
+.third-page .bottom-information a:hover {
+    text-decoration: underline;
+}

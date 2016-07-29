@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>Resume</title>
+    <style>
+        body {
+            padding-top: 50px;
+            font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+        }
+
+        .ye-data img {
+            width: 100%;
+        }
+
+        .ye-container {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+
+        .fullpage-img img {
+            margin-top: 10px;
+        }
+
+        .fullpage-text ul {
+            margin-top: 20px;
+        }
+
+        .fullpage-text li {
+            font-size: 20px;
+            padding: 8px;
+        }
+
+        .item {
+            height: 420px;
+            background: url(IMG/001.png);
+            background-size: cover;
+        }
+
+        .item > div {
+            text-align: center;
+            padding: 30px;
+            color: #fff;
+        }
+
+        .item > div > p {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .well-box {
+            margin: 20px 0;
+        }
+
+        .contact-me {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">叶芳斌-应聘初级前端开发</a>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">基本信息</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    项目经验 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#fullpage-1">简单的全屏滚动小页面</a></li>
+                    <li><a href="#bootstrap-1">响应式的个人简历网页</a></li>
+                    <li><a href="#object-js-1">面向对象编程的原生JS拖拽效果插件</a></li>
+                </ul>
+            </li>
+            <li><a href="#">联系我</a></li>
+        </ul>
+    </div>
+</nav>
+<!--轮播-->
+<div id="myCarousel" class="carousel slide ye-data">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="container">
+                <h2>个人信息</h2>
+                <p>
+                    性别:女 <br>
+                    出生年月:1989/02<br>
+                    居住地:下城区香积寺路40号
+                </p>
+                <p><a class="btn btn-primary btn-lg" role="button">
+                    加油</a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="container">
+                <h2>求职意向</h2>
+                <p>
+                    期望从事职业： WEB前端开发 <br>
+                    期望工作地点：下城区/西湖区/拱墅区<br>
+                    期望月薪：4001-6000元/月
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="container">
+                <h2>自我评价</h2>
+                <p>
+                    1、无前端开发工作经验，但有一颗保持学习的心。<br>
+                    2、熟练掌握HTML&CSS以及静态页面的制作。<br>
+                    3、对HTML5有大致了解，熟练运用CSS3动画。<br>
+                    4、熟悉JavaScript，对面向对象思想有大致了解。<br>
+                    5、掌握jQuery，以及jQuery的插件FullPage.js。<br>
+                    6、对响应式页面有大致了解，能运用Bootstrap制作响应式页面。<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<!--进度条-->
+<div class="container ye-container">
+    <h2>前端技术掌握程度</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <h4>HTML5&CSS3</h4>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                     aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                    <span class="sr-only">70% 完成</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <h4>JavaScript</h4>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                     aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                    <span class="sr-only">60% 完成</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <h4>jQuery&Bootstrap</h4>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60"
+                     aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    <span class="sr-only">60% 完成</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <h4>Phtopshop</h4>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60"
+                     aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    <span class="sr-only">60% 完成</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--标签页-->
+<div class="container">
+    <ul id="myTab" class="nav nav-tabs">
+        <li id="fullpage-1" class="active"><a href="#fullpage" data-toggle="tab">简单的全屏滚动小页面</a></li>
+        <li id="bootstrap-1"><a href="#bootstrap" data-toggle="tab">响应式的个人简历网页</a></li>
+        <li id="object-js-1"><a href="#object-js" data-toggle="tab">面向对象编程的原生JS拖拽效果插件</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="fullpage">
+            <div class="row">
+                <div class="col-md-6 col-lg-8 fullpage-text">
+                    <ul>
+                        <li>硬件环境：Mac系统</li>
+                        <li>开发工具：WebStorm Chrome</li>
+                        <li>项目描述：利用HTML&CSS3和jQuery的全屏滚动插件FullPage.js做了一个three pages 小网页。</li>
+                        <li> demo地址：<a
+                                href="http://lucookie.github.io/FullPage.js%20%E9%A1%B5%E9%9D%A2/page.html">点击查看</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 fullpage-img">
+                    <img class="img-responsive" src="IMG/demo1.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="bootstrap">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 fullpage-img">
+                    <img class="img-responsive" src="">
+                </div>
+                <div class="col-md-6 col-lg-8 fullpage-text">
+                    <ul>
+                        <li>硬件环境：Mac系统</li>
+                        <li>开发工具：WebStorm Chrome</li>
+                        <li>项目描述：利用HTML5&CSS3&Bootstrap框架做了一个个人简历页面。</li>
+                        <li> demo地址：<a
+                                href="http://lucookie.github.io/FullPage.js%20%E9%A1%B5%E9%9D%A2/page.html">点击查看</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="object-js">
+            <div class="row">
+                <div class="col-md-6 col-lg-8 fullpage-text">
+                    <ul>
+                        <li>硬件环境：Mac系统</li>
+                        <li>开发工具：WebStorm Chrome</li>
+                        <li>项目描述：利用面向对象编程思想，用原生JS写了一个拖拽效果的插件。</li>
+                        <li> demo地址：<a
+                                href="http://lucookie.github.io/FullPage.js%20%E9%A1%B5%E9%9D%A2/page.html">点击查看</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 fullpage-img">
+                    <img class="img-responsive" src="IMG/FullPage.js demo.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--教育背景-->
+<div class="container">
+    <div class="well well-box">
+        <h2>教育背景</h2>
+        <h4>2008/09 -- 2012/07：浙江财经大学 | 广告学 | 本科 </h4>
+    </div>
+</div>
+<!--联系方式-->
+<div class="container contact-me">
+    <h2>联系方式</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <p>手机:13065734218</p>
+        </div>
+        <div class="col-md-4">
+            <p>Github:<a href="https://github.com/luCooKie">https://github.com/luCooKie</a></p>
+        </div>
+        <div class="col-md-4">
+            <p>E-mail:constlucky@gmail.com</p>
+        </div>
+    </div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

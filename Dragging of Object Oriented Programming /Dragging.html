@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dragging</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #block {
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div id="block"></div>
+<script>
+    window.onload = function () {
+        var d1 = new Drag("block");
+        d1.init();
+    }
+    function Drag(id) {
+        this.oDiv = document.getElementById(id);
+        this.disX = 0;
+        this.disY = 0;
+        this.isDragging = false;
+    }
+    Drag.prototype.init = function () {
+        var This = this;
+        this.oDiv.onmousedown = function (e) {
+            var e = e || window.event;
+            This.fnDown(e);
+        }
+        document.onmousemove = function (e) {
+            var e = e || window.event;
+            This.fnMove(e);
+        }
+        document.onmouseup = function () {
+            This.fnUp();
+        }
+    }
+    Drag.prototype.fnDown = function (e) {
+        this.disX = e.pageX - this.oDiv.offsetLeft;
+        this.disY = e.pageY - this.oDiv.offsetTop;
+        this.isDragging = true;
+    }
+    Drag.prototype.fnMove = function (e) {
+        var mouseX = e.pageX;
+        var mouseY = e.pageY;
+        var moveX = 0;
+        var moveY = 0;
+        if (this.isDragging) {
+            moveX = mouseX - this.disX;
+            moveY = mouseY - this.disY;
+            if (moveX < 0) {
+                moveX = 0;
+            } else if (moveX > (document.documentElement.clientWidth - this.oDiv.offsetWidth)) {
+                moveX = document.documentElement.clientWidth - this.oDiv.offsetWidth;
+            }
+            if (moveY < 0) {
+                moveY = 0;
+            } else if (moveY > (document.documentElement.clientHeight - this.oDiv.offsetHeight)) {
+                moveY = document.documentElement.clientHeight - this.oDiv.offsetHeight;
+            }
+            this.oDiv.style.left = moveX + "px";
+            this.oDiv.style.top = moveY + "px";
+        }
+    }
+    Drag.prototype.fnUp = function () {
+        this.isDragging = false;
+    }
+</script>
+</body>
+</html>
